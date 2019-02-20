@@ -13,8 +13,10 @@ public class FizzBuzz {
 
     public String getFizzBuzz(int num) {
         if (num % 3 == 0 && num % 5 == 0) {
-            return "FizzBuzz";
-
+            return "FizzBuzz"; 
+        }
+        if (Integer.toString(num).contains("5")) {
+            return "Buzz";
         }
         if (num % 3 == 0) {
             return "Fizz";
