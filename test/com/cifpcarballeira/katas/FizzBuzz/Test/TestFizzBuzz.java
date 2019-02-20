@@ -1,4 +1,3 @@
-
 package com.cifpcarballeira.katas.FizzBuzz.Test;
 
 import com.cifpcarballeira.katas.FizzBuzz.FizzBuzz;
@@ -10,15 +9,22 @@ import static org.junit.Assert.*;
  * @author DAM121
  */
 public class TestFizzBuzz {
-    
+
     public TestFizzBuzz() {
     }
 
-    
     @Test
     public void test1devolve1() {
         FizzBuzz fb = new FizzBuzz();
         String result = fb.getFizzBuzz(1);
-        assertEquals("1",result);
+        assertEquals("1", result);
     }
+
+    @Test
+    public void test2devolve2() {
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz(2);
+        assertEquals("2", result);
+    }
+
 }
